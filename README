@@ -6,7 +6,7 @@ This circuit solves this annoying problem. Now when there is a call for high idl
 
 -----
 Construction details:
-A .100 header was used on a Radio Shack perf board to interface to the Arduino. I used a 5v relay with an NPN transistor to drive it from the Arduino. A 7805 is used to provide the arduino regulated power. LED's are added to show what is going on, and console output is provided if the unit is plugged in via USB to a laptop. The circuit is designed in such a way that if the microcontroller fails or gets disconnected, the external high idle switch signal should pass through. Therefore the operator can still control it from the dash in a fault.
+A .100 header was used on a Radio Shack perf board to interface to the Arduino. I used a 5v relay with an NPN 2N2222A transistor to drive it from the Arduino. A 7805 is used to provide the arduino regulated power. LED's are added to show what is going on, and console output is provided if the unit is plugged in via USB to a laptop. The circuit is designed in such a way that if the microcontroller fails or gets disconnected, the external high idle switch signal should pass through. Therefore the operator can still control it from the dash in a fault.
 
 After the unit was tested, it was coated in many layers of epoxy for durability in a harsh enviroment. It was installed under the dash, zip tied to the main harness, for a clean install. Note that in the pictures under the dash, the bosch auto relay to the right of the unit is not related to this circuit. (Tis the jackass radio installers relay, they did a horrible job)
 
