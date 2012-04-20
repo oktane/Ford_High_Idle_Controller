@@ -1,0 +1,44 @@
+Automatic High Idle Resume
+code and design by oktane - 2012
+
+On the latest 2011 ford truck models with the 6.7l engine, the PTO will not auto re-engage as it used to. So if anything causes it to disable, such as accidentally hitting the service brake, it will be locked out. This requires you to turn off your PTO/High Idle dash switch and turn it back on, or the system will be locked out and not function.
+This circuit solves this annoying problem. Now when there is a call for high idle, if interrupted (parking brake, brake, gas pedal, etc), the system will auto resume in 5 seconds. This is important in an emergency vehicle where the high idle is controlled by a load manager. Previously it would be unreliable, as the load manager does not sense if the high idle is working or not, it expects the high idle to work when its told to.
+
+-----
+Construction details:
+A .100 header was used on a Radio Shack perf board to interface to the Arduino. I used a 5v relay with an NPN transistor to drive it from the Arduino. A 7805 is used to provide the arduino regulated power. LED's are added to show what is going on, and console output is provided if the unit is plugged in via USB to a laptop. The circuit is designed in such a way that if the microcontroller fails or gets disconnected, the external high idle switch signal should pass through. Therefore the operator can still control it from the dash in a fault.
+
+After the unit was tested, it was coated in many layers of epoxy for durability in a harsh enviroment. It was installed under the dash, zip tied to the main harness, for a clean install. Note that in the pictures under the dash, the bosch auto relay to the right of the unit is not related to this circuit. (Tis the jackass radio installers relay, they did a horrible job)
+
+-----
+
+This project was done for an emergency fire department vehicle, where high idle is important for electrical loads. Ford was contacted for solutions and they were not interested, in fact they seemed offended I suggested the behavior was not well designed. The behavior this circuit forces is exactly what the trucks used to do before they changed the ECU firmware. Anyways, faster to roll your own solutions when facing immovable and arrogant corporate beauracracy. Millions of peices of emergency equipment will require similar systems in the years to come, if based on Ford chassis, they will have this issue until Ford can figure it out.
+
+A forum thread: http://www.thedieselstop.com/forums/f149/advanced-high-idle-bcp-issues-294578/
+
+LICENSE
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/
+
+http://creativecommons.org/licenses/GPL/2.0/
+
+THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
