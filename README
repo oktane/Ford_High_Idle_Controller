@@ -12,7 +12,7 @@ After the unit was tested, it was coated in many layers of epoxy for durability 
 
 -----
 
-This project was done for an emergency fire department vehicle, where high idle is important for electrical loads. Ford was contacted for solutions and they were not interested, in fact they seemed offended I suggested the behavior was not well designed. The behavior this circuit forces is exactly what the trucks used to do before they changed the ECU firmware. Anyways, faster to roll your own solutions when facing immovable and arrogant corporate beauracracy. Millions of peices of emergency equipment will require similar systems in the years to come, if based on Ford chassis, they will have this issue until Ford can figure it out.
+This project was done for an emergency fire department vehicle, where high idle is important for electrical loads. Ford was contacted for solutions and they were not interested, in fact they seemed offended I suggested the behavior was not well designed. The behavior this circuit forces is exactly what the trucks used to do before they changed the ECU firmware. Anyways, faster to roll your own solutions when facing immovable and arrogant corporate bureaucracy. Millions of pieces of emergency equipment will require similar systems in the years to come, if based on Ford chassis, they will have this issue until Ford can figure it out.
 
 A forum thread: http://www.thedieselstop.com/forums/f149/advanced-high-idle-bcp-issues-294578/
 A demonstration video: http://www.youtube.com/watch?v=z4JS_i2SIEA
